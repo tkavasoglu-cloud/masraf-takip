@@ -115,7 +115,7 @@ def goruntu_analiz(media_url, account_sid):
 
     # Once auth olmadan dene, sonra auth ile
     goruntu = None
-    for auth in [None, (account_sid, TWILIO_AUTH_TOKEN)]:
+    for auth in [(account_sid, TWILIO_AUTH_TOKEN), None]:
         try:
             r = requests.get(media_url, auth=auth, timeout=30)
             log.info("HTTP %d, boyut=%d, auth=%s", r.status_code, len(r.content), "var" if auth else "yok")
