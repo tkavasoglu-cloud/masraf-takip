@@ -7,3 +7,4 @@ pillow>=10.0.0
 # Opsiyonel - Google Sheets için:
 # gspread>=6.0.0
 # google-auth>=2.0.0
+python-dotenv>=1.0.0
