@@ -199,7 +199,7 @@ def webhook():
     account_sid  = request.form.get("AccountSid", "")
 
     log.info("Webhook: gonderen=%s medya=%d metin=%s", gonderen, medya_sayisi, metin)
-
+    log.info("FATURA_NUMARASI=%s | Eslesme=%s", FATURA_NUMARASI, gonderen == FATURA_NUMARASI)
     twiml = MessagingResponse()
 
     # ══════════════════════════════════════════════════════════════
