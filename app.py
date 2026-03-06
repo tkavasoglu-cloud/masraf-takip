@@ -20,7 +20,7 @@ N8N_WEBHOOK_URL = os.environ.get(
     "N8N_WEBHOOK_URL",
     "https://freyayachting.app.n8n.cloud/webhook/whatsapp-incoming"
 )
-FATURA_NUMARASI = "whatsapp:+905338110050"  # Fatura otomasyonu sadece bu numaradan calisir
+FATURA_NUMARASI = "whatsapp:+900000000000"  # Fatura otomasyonu sadece bu numaradan calisir
 
 logging.basicConfig(level=logging.INFO, format="%(asctime)s %(levelname)s %(message)s")
 log = logging.getLogger(__name__)
